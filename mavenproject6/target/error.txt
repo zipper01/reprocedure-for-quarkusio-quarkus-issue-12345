@@ -1,5 +1,3 @@
-[root@ecs-45ee downloads]# ls -l relayagent-1.0-jar-with-dependencies
--rwxr-xr-x 1 root root 61945248 Jan  9 11:37 relayagent-1.0-jar-with-dependencies
 [root@ecs-45ee downloads]# ./mavenproject6-1.0-jar-with-dependencies
 Exception in thread "main" java.lang.IllegalArgumentException: Class test.mavenproject6.Subscriber$Deserializer has no default (no arg) constructor
  at [Source: UNKNOWN; byte offset: #UNKNOWN]
