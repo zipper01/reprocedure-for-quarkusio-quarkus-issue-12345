@@ -1,0 +1,21 @@
+[root@ecs-45ee downloads]# ls -l relayagent-1.0-jar-with-dependencies
+-rwxr-xr-x 1 root root 61945248 Jan  9 11:37 relayagent-1.0-jar-with-dependencies
+[root@ecs-45ee downloads]# ./mavenproject6-1.0-jar-with-dependencies
+Exception in thread "main" java.lang.IllegalArgumentException: Class test.mavenproject6.Subscriber$Deserializer has no default (no arg) constructor
+ at [Source: UNKNOWN; byte offset: #UNKNOWN]
+        at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:4449)
+        at com.fasterxml.jackson.databind.ObjectMapper.convertValue(ObjectMapper.java:4380)
+        at test.mavenproject6.Mavenproject6.main(Mavenproject6.java:17)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Class test.mavenproject6.Subscriber$Deserializer has no default (no arg) constructor
+ at [Source: UNKNOWN; byte offset: #UNKNOWN]
+        at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1909)
+        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:268)
+        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)
+        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)
+        at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:648)
+        at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:4861)
+        at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:4442)
+        ... 2 more
+[root@ecs-45ee downloads]# cat /etc/centos-release
+CentOS Linux release 8.2.2004 (Core)
+
